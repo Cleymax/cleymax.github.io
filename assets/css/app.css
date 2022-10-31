@@ -1,0 +1,253 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Roboto", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+a,
+a:active {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0%;
+  width: 250px;
+  height: 100%;
+  background-color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  z-index: 10;
+}
+nav ul li {
+  margin: 10px 0;
+}
+nav ul li a {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+}
+nav ul li a:hover {
+  color: #3498db;
+}
+@media screen and (max-width: 768px) {
+  nav {
+    width: 100%;
+    height: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav ul {
+    display: inline-flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  nav ul li {
+    margin: 0;
+  }
+  nav ul li a {
+    font-size: 0.8em;
+  }
+}
+
+main {
+  margin: 0 50px 0 360px;
+}
+@media screen and (max-width: 768px) {
+  main {
+    padding: 10px;
+    margin-left: 0%;
+  }
+}
+main h1 {
+  margin-top: 0.67em;
+  margin-bottom: 0;
+}
+main h2 {
+  margin: 0;
+}
+main section {
+  margin: 0.77em 0;
+}
+main section h2 {
+  margin: 0.8em 0;
+}
+
+#socials {
+  margin: 1em 0;
+  display: flex;
+  gap: 5px;
+}
+#socials a svg path {
+  transition: all 0.2s ease-in-out;
+  fill: rgb(51, 51, 51);
+}
+#socials a:hover#github svg path {
+  fill: black;
+}
+#socials a:hover#gitlab svg path {
+  fill: #e24329;
+}
+#socials a:hover#linkedin svg path {
+  fill: #0077b5;
+}
+#socials a:hover#mail svg path {
+  fill: #0a7740;
+}
+
+section {
+  position: relative;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: #0077b5;
+  left: 0;
+  top: 35px;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background-color: #2c3e50;
+  left: 0;
+  top: 42px;
+}
+
+footer {
+  text-align: center;
+  margin: 2em 0 2em 260px;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    margin: 0;
+  }
+}
+
+.experiences,
+.educations {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.experiences h4,
+.educations h4 {
+  margin: 0.5em 0 0.3em 0;
+}
+.experiences h5,
+.educations h5 {
+  margin: 0.4em 0;
+}
+.experiences > li,
+.educations > li {
+  position: relative;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+}
+.experiences > li > span,
+.educations > li > span {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.experiences > li h3,
+.educations > li h3 {
+  margin: 0;
+}
+.experiences > li ul,
+.educations > li ul {
+  position: relative;
+  margin-left: 40px;
+}
+.experiences > li ul h4,
+.educations > li ul h4 {
+  margin-bottom: 0.2em;
+}
+.experiences > li ul .date,
+.educations > li ul .date {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.comp {
+  margin: 0 0 0.7em 0;
+}
+
+.steps > li {
+  position: relative;
+}
+
+.steps > li::after {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #0077b5;
+  top: 3px;
+  left: -21px;
+}
+
+.tasks {
+  list-style-type: disc;
+  margin-left: 1.7em;
+}
+.tasks .task::marker {
+  color: #2c3e50;
+}
+.tasks p {
+  margin: 0.2em 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2c3e50;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-moz-selection {
+  background: #2c3e50;
+  color: white;
+}
+
+::selection {
+  background: #2c3e50;
+  color: white;
+}/*# sourceMappingURL=app.css.map */
