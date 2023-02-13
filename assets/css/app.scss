@@ -93,7 +93,7 @@ main {
         margin: 0.77em 0;
 
         h2 {
-            margin: 0.8em 0;
+            margin: 0.9em 0 1.1em 0;
         }
     }
 }
@@ -190,6 +190,7 @@ footer {
         border-radius: 5px;
 
         > span {
+            vertical-align: middle;
             position: absolute;
             top: 15px;
             right: 15px;
@@ -206,7 +207,9 @@ footer {
             }
         }
 
-
+        sub {
+            vertical-align: middle;
+        }
 
         ul {
             position: relative;
@@ -240,6 +243,20 @@ footer {
     background-color: #0077b5;
     top: 3px;
     left: -21px;
+}
+
+.skills {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-evenly;
+    gap: 5px;
+
+    li {
+        margin-top: 5px;
+        margin-right: 2%;
+    }
 }
 
 .tasks {

@@ -88,7 +88,7 @@ main section {
   margin: 0.77em 0;
 }
 main section h2 {
-  margin: 0.8em 0;
+  margin: 0.9em 0 1.1em 0;
 }
 
 #socials {
@@ -171,6 +171,7 @@ footer {
 }
 .experiences > li > span,
 .educations > li > span {
+  vertical-align: middle;
   position: absolute;
   top: 15px;
   right: 15px;
@@ -185,6 +186,10 @@ footer {
     width: 65%;
     margin-bottom: 0.3em;
   }
+}
+.experiences > li sub,
+.educations > li sub {
+  vertical-align: middle;
 }
 .experiences > li ul,
 .educations > li ul {
@@ -220,6 +225,19 @@ footer {
   background-color: #0077b5;
   top: 3px;
   left: -21px;
+}
+
+.skills {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+.skills li {
+  margin-top: 5px;
+  margin-right: 2%;
 }
 
 .tasks {
