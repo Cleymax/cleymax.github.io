@@ -179,6 +179,13 @@ footer {
 .educations > li h3 {
   margin: 0;
 }
+@media screen and (max-width: 768px) {
+  .experiences > li h3,
+  .educations > li h3 {
+    width: 65%;
+    margin-bottom: 0.3em;
+  }
+}
 .experiences > li ul,
 .educations > li ul {
   position: relative;

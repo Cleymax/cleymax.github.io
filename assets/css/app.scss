@@ -4,7 +4,7 @@ body {
     padding: 0;
     font-family: "Open Sans", "Roboto", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
         Geneva, Verdana, sans-serif;
-        scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 a,
@@ -199,6 +199,15 @@ footer {
             margin: 0;
         }
 
+        @media screen and (max-width: 768px) {
+            h3 {
+                width: 65%;
+                margin-bottom: 0.3em;
+            }
+        }
+
+
+
         ul {
             position: relative;
             margin-left: 40px;
@@ -215,6 +224,7 @@ footer {
         }
     }
 }
+
 .comp {
     margin: 0 0 0.7em 0;
 }
