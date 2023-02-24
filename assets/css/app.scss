@@ -429,12 +429,22 @@ footer {
 
 .direction-l .school:before,
 .direction-r .school:before {
-    border-color: #34dbdb;
+    border-color: #30b4b4;
 }
 
 .direction-l .company:before,
 .direction-r .company:before {
     border-color: #34db66;
+}
+
+.direction-l .project:before,
+.direction-r .project:before {
+    border-color: #dbca34;
+}
+
+.direction-l .github:before,
+.direction-r .github:before {
+    border-color: #a8a8a8;
 }
 
 .direction-r .flag:before {
